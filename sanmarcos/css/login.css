@@ -1,0 +1,205 @@
+html, body {
+    height: 100%;
+    vertical-align: middle;
+}
+
+#loginbtn {
+    width: 200px;
+}
+
+BODY
+{
+	MARGIN-BOTTOM: 0pt;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: White;
+    BACKGROUND-REPEAT:no-repeat;
+    padding-bottom: 70px;
+    display: table;
+    margin: auto;
+}
+
+table td {
+    padding: 5px;
+}
+
+body > .content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#Footer {
+
+    display: block;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    background:#2ba32b;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+}
+
+#Footer a,
+#Footer a:hover,
+#Footer a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* IE 6 */
+* html #Footer {
+   position:absolute;
+   top:expression((0-(Footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+.input-group {
+    margin: 15px 0 0 0;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+}
+
+input,
+select {
+    display: block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.copyright
+{
+	display: block;
+    font-size: 0.7em;
+    margin-top: 5px;
+}
+
+#SubLoginPage, #ReturnLogin {
+    display: block;
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+.loadingIconD 
+{
+  vertical-align: middle;
+}
+
+.ERROR
+{
+    display: block;
+	margin: 10px 0;
+	border-right: red 1px solid;
+	border-top: red 1px solid;
+	font-weight: bold;
+	border-left: red 1px solid;
+	color: red;
+	border-bottom: red 1px solid;
+	font-family: Arial;
+	text-align:center;
+	cursor:default;
+}
+.POPUP_ERROR
+{
+	border: red 1px solid;
+	/*border-right: red 1px solid;
+	border-top: red 1px solid;
+	border-bottom: red 1px solid;*/
+	font-weight: bold;
+	border-left: red 1px solid;
+	color: red;
+	font-family: Arial;
+	cursor:default;
+	width:248px;
+	display:none;
+	margin-bottom:5px;
+}
+.LockScreen
+{
+	font-weight: bold;
+	font-size: 36pt;
+	font-family: Arial;
+	color:Red;
+}
+
+#Logo{
+    float:right;
+    position:relative;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0px 25px;
+    width:100%;
+    text-align:center;
+}
+#Logo img {
+    height: 40px;
+}
+
+
+#EdupointLogo{
+    float:right;
+    position:relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0px 25px;
+}
+#EdupointLogo img {
+    height: 50px;
+}
+
+
+#SynergyLogo{
+    float:left;
+    position:relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+}
+#SynergyLogo img {
+    height: 50px;
+}
+
+input,
+select {
+    width:100%;
+}
+
+.input-btn {
+    padding-top: 10px;
+    text-align: center;
+    width: 50%;
+}
+
+.critical {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.frmCtrlGrp {
+    padding-top: 10px;
+}
+
+.frmCtrlGrp > * {
+    display: block;
+    min-width: 100%;
+}
+
+.frmCtrlGrp > .form-control {
+    height: 34px;
+}
+
+.frmButtons {
+    text-align: right;
+}
+
+.frmButtons > .btn {
+    min-width: 30%;
+    display: inline-block;
+    width: auto;
+}

